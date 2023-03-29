@@ -1,0 +1,14 @@
+name: ios-test
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  my_test:
+    runs-on: macos-latest
+  
+    steps:
+    - name: test
+      run: xcodebuild -version  
